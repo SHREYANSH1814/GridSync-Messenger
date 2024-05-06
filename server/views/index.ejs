@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://localhost:5000/socket.io/socket.io.js"></script>
+    <style>
+      #message_box {
+        background-color: aqua;
+        width: 80vw;
+        height: 60vh;
+        margin: auto;
+        margin-right: 20vh;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+      }
+      input {
+        margin-left: 30vh;
+        height: 5vh;
+        width: 50vw;
+        background-color: red;
+        margin-right: 5vh;
+      }
+      button {
+        width: 10vw;
+        height: 5vh;
+        background-color: bisque;
+      }
+
+      div {
+        margin-bottom: 2vh;
+      }
+      .msgreceived {
+        background-color: pink;
+        font-size: 25px;
+        width: max-content;
+        padding-right: 10px;
+        padding-left: 5px;
+        padding-top: 6px;
+        margin-bottom: 2px;
+        margin-left: 5vw;
+      }
+      .msgsend {
+        background-color: pink;
+        font-size: 25px;
+        width: max-content;
+        padding-right: 10px;
+        padding-left: 5px;
+        padding-top: 6px;
+        margin-bottom: 2px;
+        margin-left: 60vw;
+      }
+    </style>
+    </style>
+  </head>
+  <body>
+    <h1>hello I a home page</h1>
+     <div id="message_box"></div>
+    <div>
+      <input type="text" id="sendtxt" />
+      <button id="btnsend">Send</button>
+    </div>
+    <div>
+      <input type="file" id="myfile"/>
+      <input type="text" id="sendtxtfile" />
+      
+      <button type="send_message" id="btnsendfile">Send</button>
+    </div>
+    <p  id="btnid"><%= data.id %></p>
+    <p  id="btnridid"><%= data.rid %></p>
+    <button id="gooffline">Go offline</button>
+    <script src="/index.js"></script>
+  </body>
+</html>
+
+
+
+ 
+  </head>
+  <body>
+    <h1>hello</h1>
+   
+    <script src="./index.js"></script>
+  </body>
+</html>
